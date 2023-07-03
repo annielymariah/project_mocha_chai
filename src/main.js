@@ -1,2 +1,0 @@
-import Calculadora from "./Calculadora";
-

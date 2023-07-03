@@ -1,92 +1,86 @@
-# project_moca_chai
+#  <center> Realização de testes utilizando Mocha e Chai
+
+## <center> Objetivo
+O seguinte repositório tem como objetivo definir o que são e apresentar a realização de testes utilizando os frameworks para JavaScript denominados Mocha e Chai. A partir dessa premissa, está documentação irá auxiliar aqueles que desejam reproduzir taís testes em sua máquina, podendo implementar novos testes e aprimorar aqueles já existentes.
+
+Solicito, caso seja utilizado, a presença de créditos pelo meu desenvolvimento.
+
+## <center> Definição: Mocha & Chai
+
+Mocha e Chai são duas bibliotecas para realização de testes em JavaScript, sendo usadas em conjunto para escrever principalmente testes unitários e de integração. São amplamente adotadas pela comunidade de desenvolvimento de software, oferecendo uma maneira robusta e flexível de garantir a qualidade do código por meio de testes automatizados.
+
+Além disso, elas contém recursos como relatórios de teste, suporte a assincronismo e suporte a diferentes estilos de escrita de testes (como TDD - Test Driven Development e BDD - Behavior Driven Development).
 
 
+| Framework | <center> Utilizade | Documentação |
+|-----------|-----------|--------------|
+| __Mocha__ | Framework de testes que permite execução tanto por ambientes de execução Node quanto no navegador. | https://mochajs.org |
+| __Chai__ | É uma biblioteca de asserção (ou "assertion library") que pode ser usada em conjunto com o Mocha fornecendo uma série de métodos e estilos de asserção que facilitam a escrita e a leitura dos testes. | https://www.chaijs.com |
 
-## Getting started
+##  <center> Pré-requisitos
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+- Um editor de código-fonte;
+- Instalação do Node.js;
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+###  <center>  Software recomendado
 
-## Add your files
+| Software | Versão | Download |
+|----------|--------|----------|
+| Visual Studio Code| 1.79.2 | https://code.visualstudio.com/download |
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+## <center> Instalação
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/compass_anniely/project_moca_chai.git
-git branch -M main
-git push -uf origin main
-```
+Para a execução dos testes, será necessário a realização dos seguintes passos:
 
-## Integrate with your tools
+1. Abra seu editor de código-fonte;
+2. Crie um projeto em Node.js;
+2. Crie uma pasta __test__ e um documento denominado __sample.spec.js__;
+3. Inicie o Propt de comando ou Windows PowerShell de sua máquina (Para VSCode, inicialize utilizando o atalho Ctrl + Shift + ');
+4. Com o Propt aberto, insira o seguinte comando:
+`npm i -D Mocha Chai`
 
-- [ ] [Set up project integrations](https://gitlab.com/compass_anniely/project_moca_chai/-/settings/integrations)
+A partir dessa execução básica, iremos organizar nosso ambiente de testes.
 
-## Collaborate with your team
+5. __Fora do arquivo test__, elabore um arquivo json chamado __package.json__;
+6. Insira o seguinte código:
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+![](https://media.discordapp.net/attachments/1027385935333171220/1125497339432423534/image.png?width=351&height=525)
 
-## Test and Deploy
+7. Salve e elabore uma pasta __src__ para armazenar o documento que deseja testar, o projeto ficará com a seguinte estrutura:
 
-Use the built-in continuous integration in GitLab.
+![](https://media.discordapp.net/attachments/1027385935333171220/1125491626551296000/image.png?width=217&height=206)
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+## <center> Criando os testes
+Para a criação dos testes, será utilizado o framework previamente instalado chamado __Mocha__, com ele, será possível gerar scripts de testes para verificar possíveis casos de testes.
 
-***
+- Antes de realizar, é importante adicionar o import referente ao documento que deseja testar, e também do framework auxiliar __Chai__, pelo qual irá complementar a utilização do Mocha.
 
-# Editing this README
+Estrutura do código:
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+    
+    import Arquivo_teste from '../src/Arquivo_teste.js'
+    import chai from 'chai'
+    const expect = chai.expect
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+    describe('Conjunto de testes', () => {
+    
+    it('Verificar X coisa', () => {
+        //código
+    });
 
-## Name
-Choose a self-explaining name for your project.
+_Para a elaboração dos testes, será necessária a consulta das documentações de ambos os framewoks._
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+## <center> Executando os testes
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+Como executar:
+1. Salve a documentação de testes;
+2. Inicie o Console de sua preferência (Para VSCode, inicialize utilizando o atalho Ctrl + Shift + ');
+3. Insira o seguinte comando: `npm test`;
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+O resultado esperado será a validação dos testes programados, demonstrando se eles foram ou não falhos.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+![](https://media.discordapp.net/attachments/1027385935333171220/1125496009666084915/image.png?width=603&height=202)
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## Colaboradores
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## Licença
