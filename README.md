@@ -83,7 +83,7 @@ O resultado esperado será a validação dos testes programados, demonstrando se
 
 ## Colaboradores
 
-@NimsayS - Yasmin Lima
-
 ## Licença
 - [Licença do Arquivo](https://gitlab.com/compass_anniely/project_moca_chai/-/blob/main/LICENSE)
+
+[Licença do Arquivo.](https://gitlab.com/compass_anniely/project_moca_chai/-/blob/main/LICENSE)
