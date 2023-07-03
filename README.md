@@ -82,8 +82,6 @@ O resultado esperado será a validação dos testes programados, demonstrando se
 ![](https://media.discordapp.net/attachments/1027385935333171220/1125496009666084915/image.png?width=603&height=202)
 
 ## Colaboradores
-
+- @NimsayS - Yasmin Lima
 ## Licença
 - [Licença do Arquivo](https://gitlab.com/compass_anniely/project_moca_chai/-/blob/main/LICENSE)
-
-[Licença do Arquivo.](https://gitlab.com/compass_anniely/project_moca_chai/-/blob/main/LICENSE)
