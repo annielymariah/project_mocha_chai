@@ -11,7 +11,6 @@ Mocha e Chai são duas bibliotecas para realização de testes em JavaScript, se
 
 Além disso, elas contém recursos como relatórios de teste, suporte a assincronismo e suporte a diferentes estilos de escrita de testes (como TDD - Test Driven Development e BDD - Behavior Driven Development).
 
-
 | Framework | <center> Utilizade | Documentação |
 |-----------|-----------|--------------|
 | __Mocha__ | Framework de testes que permite execução tanto por ambientes de execução Node quanto no navegador. | https://mochajs.org |
